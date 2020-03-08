@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Titan+One&display=swap');
 
 body,html {
     padding: 0;
     margin: 0;
 }
 
+p {
+    color: #222222;
+}
 
 
 
 body {
     
-    background-color:whitesmoke;    
-    font-family: 'Quicksand', sans-serif;
+    background-color:white;
+    font-family: 'Raleway', sans-serif;
     height:100%;
 
 }
@@ -28,13 +33,20 @@ a {
     padding-right:20px;
     padding-bottom:20px;
     height:100vh;
-    background-image:url("header.jpg");
+    background-image:url("heder1.jpg");
     background-size:cover;
     background-position:center;
     color:white;
     display:flex;
     flex-direction:column;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Titan One', cursive;
+
+    h2 {
+        color:white;
+        line-height:2;
+        opacity:0.8;
+        font-size:40px;
+    }
     
  
     
@@ -76,7 +88,7 @@ a {
     padding:10px;
     z-index:1 !important;
 
-    
+    border-bottom:2px solid rgba(167, 29, 49, 0.5);
 
 }
 
@@ -120,9 +132,10 @@ a {
     padding-right:7px;
     padding-top:3px;
     padding-bottom:3px;
-    background-color: #A71D31;
-    color:white;
-    border:none;
+    color:#a71D31;
+    border:1px solid #a71D31;
+    background:none;
+  
 }
 
 .cardsContainer {
@@ -131,6 +144,15 @@ a {
     justify-content: center;
     color:white;
     padding:8px;
+
+    p {
+        color:white;
+    }
+
+    h2 {
+        opacity:0.8;
+    }
+    
 
   
    
@@ -142,6 +164,8 @@ a {
         flex-direction:column;
         padding:30px;
 
+        
+
         hr {
             background-color:white;
         }
@@ -150,15 +174,21 @@ a {
             font-size:60px;
         }
 
+
+        h2 {
+            opacity:0.8;
+        }
         p {
             font-size:20px;
             opacity:0.8;
+            color:white;
+            text-align: center;
         }
     }
     
     a {
         color:white;
-        opacity:0.8;
+        opacity:1 !important;
     }
 }
 
@@ -200,6 +230,7 @@ a {
     margin-left:5px;
     margin-right:5px;
     font-size:20px;
+    transition:300ms ease-in-out;
 }
 
 .lightB:focus {
@@ -213,6 +244,7 @@ a {
     margin-right:5px;
     font-size:20px;
     border:2px solid #A71D31;
+    transition:300ms ease-in-out;
 }
 
 .cari {
@@ -225,7 +257,7 @@ a {
 
     p {
         opacity:0.8;
-        line-height:1.8;
+        line-height:2;
     }
 }
 
@@ -236,6 +268,9 @@ a {
     flex-direction:column;
     align-items:center;
 
+    hr {
+        background-image:linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0));
+    }
     h1 {
         color: #A71D31;
 }
@@ -273,8 +308,11 @@ a {
     flex-direction:column;
     align-items:center;
     color:white;
-    background-color:#1C3041;
+    background-color:#0F4C5C;
     padding:20px;
+   
+
+    
     
 
     justify-content: center;
@@ -291,6 +329,14 @@ a {
         
         p {
             margin:5px;
+            color:white;
+        }
+
+        
+    }
+    .footerItem {
+        p {
+            color:white !important;
         }
     }
 }
@@ -434,6 +480,10 @@ a {
         background-image:linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0));
         height:1px;
     }
+    
+    h2 {
+        color: #A71D31;
+    }
 
     .aboutItem{
         p {
@@ -500,12 +550,17 @@ a {
   display:flex;
   flex-direction:column;
   align-items:center;
+  border:2px solid rgba(167, 29, 49, 0.9);
 
   .fas {
       font-size:20px;
   }
 }
 
+
+.front {
+    border:2px solid rgba(167, 29, 49, 0.9);
+}
 
 .card .back {
     background: rgba(167, 29, 49, 1);
@@ -1065,9 +1120,128 @@ p {
 }
 
  }
-
+.uD {
+    display:none;
+}
  @media only screen and (min-width: 992px) {
 
+    
+    .back {
+        font-size:25px !important;
+    }
+    .uD {
+        display:flex !important;
+        flex-direction:row;
+        padding-top:10rem;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+        padding-top:10rem;
+        height:100vh;
+
+        .uiD {
+            width:50%;
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(167, 29, 49, 0.9 );
+            
+        }
+
+        .uiD1 {
+            width:50%;
+            background-color:#222222;
+            color:white;
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-right:20px;
+        }
+        
+    }
+    .contactUS {
+        display:none;
+    }
+    
+  #top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(167, 29, 49, 1);
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+    .iCHD {
+        display:flex !important;
+        width:50%;
+        
+
+        p {
+            color:white;
+            opacity:0.8;
+            font-size:65px;
+        }
+    }
+
+    
+
+  
+    .containerAbout {
+        flex-direction:row;
+        justify-content: center;
+        margin:10px;
+        margin-top:0px !important;
+        text-align: center;
+        
+        padding-top:10rem !important;
+
+        .itemAbout {
+         height:300px;
+         width:300px;
+         margin:0 !important;
+            margin-left:20px !important;
+            margin-right:20px !important;
+            opacity:0.9;
+        
+
+
+        }
+
+        
+    }
+    .cDesktop {
+   
+        hr {
+            background-image:linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0));
+        }
+        
+        display:flex !important;
+
+        h2 {
+            color:rgba(167, 29, 49, 1);
+        }
+
+        
+    }
+
+    .aboutText {
+        display:none;
+    }
   
 
     .masthead {
@@ -1079,16 +1253,26 @@ p {
         padding-left:5rem;
         margin:0 !important;
 
+        h1 {
+            color:red !important;
+        }
+
         .item {
             width:60%;
+
+           
         }
+
+       
 
         
     }
 
-    h1 {
-        font-size:70px;
+    .iCh {
+        display:none;
     }
+
+ 
 
     .desBut {
         display:none;
@@ -1121,8 +1305,11 @@ p {
             height:auto;
             margin-top:20px !important;
             margin:15px !important;
+            
+            
         }
 
+        
 
     
       
@@ -1136,11 +1323,51 @@ p {
 }
 
 .caro {
-    padding:5rem; 
+    padding:10rem; 
+    padding-bottom:0 !important;
+
+
 }
+
 .mainContainer1 {
    
     display:none !important;
+}
+
+.mainContainer {
+    display:none !important;
+}
+
+.cD1 {
+
+    display:flex !important;
+    h2 {
+        color:rgba(167, 29, 49, 1);
+    }
+
+    hr {
+        background-image:linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0)) !important;
+    }
+
+    p {
+        line-height: 2;
+        text-align:left;
+        margin-top:2rem;
+    }
+}
+
+.lightB {
+    font-size:30px;
+   
+}
+
+.lightB:focus {
+    font-size:35px;
+
+}
+
+.lightB:hover {
+    font-size:35px;
 }
 
 p {
@@ -1203,24 +1430,36 @@ h2 {
       flex-direction:row;
       position:absolute;
       bottom:0px;
-      left:21%;
-      justify-content: center;
+      left:0px;
+      right:0px;
+      margin-left:auto !important;
+      margin-right:auto !important;
+     
       align-items: center;
-      background-color:rgba(167, 29, 49, 0.8);
-      width:auto;
+      background-color:rgba(255, 255, 255, .8);
+      width:88%;
 
       .itemDesktop {
           display:flex;
           flex-direction:row;
-        border-right:1px solid white;
+        border-right:1px solid rgba(167, 29, 49, 0.8);
             justify-content: center !important;
           align-items: center;
           padding:30px;
           text-align: center !important;
-          width:auto;
+          width:33.3%;
+          color:rgba(167, 29, 49, 0.8);
+          height:120px;
 
           .fas {
               font-size:50px;
+              opacity:0.8;
+              color:rgba(167, 29, 49, 0.8);
+            
+          }
+
+          .ss {
+            opacity:0.8;
           }
           
           
@@ -1240,7 +1479,7 @@ h2 {
   .contactUS {
       padding:0rem;
       padding-bottom:1rem !important;
-      padding-top: 11rem !important;
+      padding-top: 11   rem !important;
       flex-direction:column;
       align-items: center;
       justify-content: center;
@@ -1308,15 +1547,48 @@ h2 {
     
 }
 
+.change {
+    background-color: #0F4C5C;
+}
 
 
+.cDesktop {
+    display:none;
+}
 
  
 
 
 
+.cD1 {
+    display:none;
+}
 
 
-
+  .iCHD {
+      display:none;
+  }
   
+
+  #top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(167, 29, 49, 0.8);
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+  }
   
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  html {
+      scroll-behavior: smooth;;
+  }

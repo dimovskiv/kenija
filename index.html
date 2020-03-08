@@ -20,14 +20,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main1.js"></script>
+    <script src="parallax.js"></script>
+    <script src="scrollFix.js"></script>
 </head>
-<body>
-
+<body >
+  <button class="skrolaj" onclick="topFunction()" data-aos="flip-left" id="top" title="Go to top"><i class="fas fa-arrow-up " ></i></button>
     <nav class="navbar navbar-expand-lg   ">
         <div class="container-fluid">
         <a class="navbar-brand ml-1" href="index.html"><img src="/img/logo1.png" class="logoNav"></a>
         <button id="changeTogle" class="navbar-toggler collapsed mr-4" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="far fa-compass fa-2x"></i>
+            <i class="far fa-compass fa-2x mt-3" ></i>
         </button>
       
         <div class="collapse navbar-collapse   "  id="navbarTogglerDemo02">
@@ -72,32 +74,50 @@
 
 
 
-  <div class="masthead">
-    <div class="item" >
-        <h1>Choice Integrated Academy</h1>
+  <div class="masthead" >
+    <div class="item iCh"  >
+        <h2>Choice Integrated Academy</h2>
+       
+    </div>
+    <div class="iCHD">
+      <p>CHOICE INTEGRATED ACADEMY</p>
     </div>
     <div class="item1 animated flash infinite slower">
         <button class="desBut" onclick="window.location.href='contactUS.html'">APPLY NOW <i class="far fa-star ml-2"></i></button> 
     </div>
 
     <div class="samoDesktop animated flash slower infinite">
-      <div class="itemDesktop"> <i class="fas fa-book "></i> <span class="ml-3 mr-5"> OUR PROMISE</span></div>
-      <div class="itemDesktop"> <i class="fas fa-star"></i> <span class="ml-3 mr-5"> ACHIEVEMENTS</span></div>
-      <div class="itemDesktop" style="border-right:none;"><i class="fas fa-book-reader"></i> <span class="ml-3"> ADMISSIONS</span> </div>
+      <div class="itemDesktop"> <i class="fas fa-book "></i> <span class="ml-3 mr-5 ss"> OUR PROMISE</span></div>
+      <div class="itemDesktop"> <i class="fas fa-star"></i> <span class="ml-3 mr-5 ss"> ACHIEVEMENTS</span></div>
+      <div class="itemDesktop" style="border-right:none;"><i class="fas fa-book-reader"></i> <span class="ml-3 ss"> ADMISSIONS</span> </div>
     </div>
   </div>
 
   <div class="mainContainer mt-3 mb-3">
-      <div class="itemContainer" >
-        <h2>Choice integrated Academy Kilimani Nairobi</h2>
+      <div class="itemContainer" data-aos="fade-in-right" >
+        <h1 class="text-left">Choice integrated Academy Kilimani Nairobi</h1>
         <hr>
       </div>
 
-      <div class="itemContainer">
+      <div class="itemContainer" data-aos="fade-in-right">
         <p>Coding and STEM Curriculum courses provide students with a solid computer programming foundation.
        Choice Integrated Academy is a private tuition center located in Nairobi’s Kilimani area. The school <span id="dots">...</span><span id="more">currently follows the British curriculum blended with coding and Islamic ethos. It is accommodative of all religious backgrounds. At Choice Integrated Academy We provide the British curriculum education drawing from global best practice with a child centered approach. We educate your child to become a globally competent citizen aiming to make Choice Integrated Academy a world class school. </span>  </p>
         <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
+  </div>
+
+  <div class="container cD1 text-center mt-5 mb-5 pb-5" data-aos="fade-in-right">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>CHOICE INTEGRATED ACADEMY KILIMANI NAIROBI</h2>
+        <hr>
+      </div>
+      <div class="col-lg-12">
+        <p>Coding and STEM Curriculum courses provide students with a solid computer programming foundation.
+          Choice Integrated Academy is a private tuition center located in Nairobi’s Kilimani area. The school currently follows the British curriculum blended with coding and Islamic ethos. It is accommodative of all religious backgrounds. At Choice Integrated Academy We provide the British curriculum education drawing from global best practice with a child centered approach. We educate your child to become a globally competent citizen aiming to make Choice Integrated Academy a world class school. </p>
+        
+      </div>
+    </div>
   </div>
 
   <div class="cardsContainer mt-2 " >
@@ -106,10 +126,10 @@
         <h2 class="mt-3"> Digitally compliant academic progress</h2>
         <hr>
         <p>A Choice Integrated Academy pupil breaks academic barriers with an introduction to coding from preschool, with a child-centered approach at all levels.</p>
-        <a href="#" class="mt-4 a">Read more ></a>
+        <a href="#" class="mt-4">Read more ></a>
       </div>
       <div class="card5 my-1" data-aos="fade-up">
-        <i class="fas fa-cogs mb-2"></i>
+        <i class="fas fa-cog mb-2"></i>
         <h2 class="mt-3">Consistency</h2>
         <hr>
         <p>A Choice Integrated Academy Learner is consistent in their training, self-worth, skill level and ability to make a positive difference in the world.</p>
@@ -117,7 +137,7 @@
       </div>
       <div class="card5" data-aos="fade-up">
         <i class="fas fa-cubes mb-2"></i>
-        <h2 class="mt-3"> Inspire confidence & self-reliance</h2>
+        <h2 class="mt-3 "> Inspire confidence & self-reliance </h2>
         <hr>
         <p>A Choice Integrated academy Learner exceeds previous expectations of what they can achieve academically, whatever their starting point.</p>
         <a href="#" class="mt-4 ">Read more ></a>
@@ -128,7 +148,7 @@
     <div id="carousel-with-b" class="carousel slide carousel-multi-item" >
     
     
-     <div class="controls-top mb-4">
+     <div class="controls-top  mb-4">
        <a class="btn-floating" href="#carousel-with-b" data-slide-to="0">
          <button class="lightB">MISSION</button>
        <a class="btn-floating" href="#carousel-with-b" data-slide-to="1">
@@ -145,9 +165,9 @@
        <div class="carousel-item text-left">
          
         <div class="cari">
-            <h3>MISSION</h3>
-            <hr>
-            <p class="mt-4">
+           
+          
+            <p class="mt-2">
                 Choice integrated Academy strives to develop an enriched learning community that promotes academic achievement, leadership, and Islamic values. 
 
                 To provide individualized education that addresses students’ unique learning styles, cultivates independent thought, and promotes the building of character, enabling them to contribute to their communities in meaningful and positive ways.
@@ -163,9 +183,9 @@
     
    
         <div class="cari">
-            <h3>VISION</h3>
-            <hr>
-            <p class="mt-4">
+           
+           
+            <p class="mt-1">
                 To build and maintain a digitally compliant learning community that produces future industry leaders through faith, knowledge, and inspiration. 
 
                 To become a model school in terms of education, programs, and activities. 
@@ -180,9 +200,8 @@
        </div>
        <div class="carousel-item active text-left">
         <div class="cari">
-           <h3>CHOICE INTEGRATED ACADEMY</h3>
-           <hr>
-           <p class="mt-4">
+         
+           <p class="mt-1">
                An academy of choice. <br/>
 
 Welcome to Choice Integrated Academy, a private learning institution located in the serene and conducive Kilimani area of Nairobi.
@@ -263,7 +282,27 @@ At Choice Integrated Academy, we provide British International Curriculum of Edu
       
 
 
+<script>
+  
+mybutton = document.getElementById("top");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 <script>
     function myFunction() {
   var dots = document.getElementById("dots");

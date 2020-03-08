@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Titan+One&display=swap");
 body, html {
   padding: 0;
   margin: 0;
 }
 
+p {
+  color: #222222;
+}
+
 body {
-  background-color: whitesmoke;
-  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
   height: 100%;
 }
 
@@ -21,7 +27,7 @@ a {
   padding-right: 20px;
   padding-bottom: 20px;
   height: 100vh;
-  background-image: url("header.jpg");
+  background-image: url("heder1.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -32,7 +38,14 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Titan One', cursive;
+}
+
+.masthead h2 {
+  color: white;
+  line-height: 2;
+  opacity: 0.8;
+  font-size: 40px;
 }
 
 .masthead .item {
@@ -68,6 +81,7 @@ a {
   background: white;
   padding: 10px;
   z-index: 1 !important;
+  border-bottom: 2px solid rgba(167, 29, 49, 0.5);
 }
 
 .logoNav {
@@ -115,9 +129,9 @@ a {
   padding-right: 7px;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: #A71D31;
-  color: white;
-  border: none;
+  color: #a71D31;
+  border: 1px solid #a71D31;
+  background: none;
 }
 
 .cardsContainer {
@@ -133,6 +147,14 @@ a {
           justify-content: center;
   color: white;
   padding: 8px;
+}
+
+.cardsContainer p {
+  color: white;
+}
+
+.cardsContainer h2 {
+  opacity: 0.8;
 }
 
 .cardsContainer .card5 {
@@ -157,14 +179,20 @@ a {
   font-size: 60px;
 }
 
+.cardsContainer .card5 h2 {
+  opacity: 0.8;
+}
+
 .cardsContainer .card5 p {
   font-size: 20px;
   opacity: 0.8;
+  color: white;
+  text-align: center;
 }
 
 .cardsContainer a {
   color: white;
-  opacity: 0.8;
+  opacity: 1 !important;
 }
 
 .card55 {
@@ -209,6 +237,8 @@ a {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 20px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .lightB:focus {
@@ -222,6 +252,8 @@ a {
   margin-right: 5px;
   font-size: 20px;
   border: 2px solid #A71D31;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .cari {
@@ -237,7 +269,7 @@ a {
 
 .cari p {
   opacity: 0.8;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .mainContainer1 {
@@ -255,6 +287,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mainContainer1 hr {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(167, 29, 49, 0.5)), to(rgba(167, 29, 49, 0)));
+  background-image: linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0));
 }
 
 .mainContainer1 h1 {
@@ -304,7 +341,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background-color: #1C3041;
+  background-color: #0F4C5C;
   padding: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -329,6 +366,11 @@ a {
 
 .footer .footerItem1 p {
   margin: 5px;
+  color: white;
+}
+
+.footer .footerItem p {
+  color: white !important;
 }
 
 .border {
@@ -494,6 +536,10 @@ a {
   height: 1px;
 }
 
+.aboutText h2 {
+  color: #A71D31;
+}
+
 .aboutText .aboutItem p {
   line-height: 2;
 }
@@ -550,10 +596,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid rgba(167, 29, 49, 0.9);
 }
 
 .card .front .fas {
   font-size: 20px;
+}
+
+.front {
+  border: 2px solid rgba(167, 29, 49, 0.9);
 }
 
 .card .back {
@@ -1051,7 +1102,7 @@ a {
 
 ul.timeline {
   list-style-type: none;
-  z-index: 99 !important;
+  z-index: 5 !important;
 }
 
 ul.timeline:before {
@@ -1062,7 +1113,7 @@ ul.timeline:before {
   left: 29px;
   width: 2px;
   height: 100%;
-  z-index: 99 !important;
+  z-index: 5 !important;
 }
 
 ul.timeline > li {
@@ -1080,7 +1131,7 @@ ul.timeline > li:before {
   left: 20px;
   width: 20px;
   height: 20px;
-  z-index: 99 !important;
+  z-index: 5 !important;
 }
 
 .cItemg {
@@ -1121,7 +1172,144 @@ ul.timeline > li:before {
   line-height: 2;
 }
 
+.uD {
+  display: none;
+}
+
 @media only screen and (min-width: 992px) {
+  .back {
+    font-size: 25px !important;
+  }
+  .uD {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 10rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    padding-top: 10rem;
+    height: 100vh;
+  }
+  .uD .uiD {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(167, 29, 49, 0.9);
+  }
+  .uD .uiD1 {
+    width: 50%;
+    background-color: #222222;
+    color: white;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 20px;
+  }
+  .contactUS {
+    display: none;
+  }
+  #top {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #a71d31;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+  }
+  #myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+  }
+  .iCHD {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 50%;
+  }
+  .iCHD p {
+    color: white;
+    opacity: 0.8;
+    font-size: 65px;
+  }
+  .containerAbout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px;
+    margin-top: 0px !important;
+    text-align: center;
+    padding-top: 10rem !important;
+  }
+  .containerAbout .itemAbout {
+    height: 300px;
+    width: 300px;
+    margin: 0 !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    opacity: 0.9;
+  }
+  .cDesktop {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .cDesktop hr {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(167, 29, 49, 0.5)), to(rgba(167, 29, 49, 0)));
+    background-image: linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0));
+  }
+  .cDesktop h2 {
+    color: #a71d31;
+  }
+  .aboutText {
+    display: none;
+  }
   .masthead {
     background-image: url("hehe.jpg");
     background-position: center;
@@ -1131,11 +1319,14 @@ ul.timeline > li:before {
     padding-left: 5rem;
     margin: 0 !important;
   }
+  .masthead h1 {
+    color: red !important;
+  }
   .masthead .item {
     width: 60%;
   }
-  h1 {
-    font-size: 70px;
+  .iCh {
+    display: none;
   }
   .desBut {
     display: none;
@@ -1175,10 +1366,40 @@ ul.timeline > li:before {
     padding: 6rem;
   }
   .caro {
-    padding: 5rem;
+    padding: 10rem;
+    padding-bottom: 0 !important;
   }
   .mainContainer1 {
     display: none !important;
+  }
+  .mainContainer {
+    display: none !important;
+  }
+  .cD1 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .cD1 h2 {
+    color: #a71d31;
+  }
+  .cD1 hr {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(167, 29, 49, 0.5)), to(rgba(167, 29, 49, 0))) !important;
+    background-image: linear-gradient(to right, rgba(167, 29, 49, 0.5), rgba(167, 29, 49, 0)) !important;
+  }
+  .cD1 p {
+    line-height: 2;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .lightB {
+    font-size: 30px;
+  }
+  .lightB:focus {
+    font-size: 35px;
+  }
+  .lightB:hover {
+    font-size: 35px;
   }
   p {
     font-size: 18px;
@@ -1230,15 +1451,15 @@ ul.timeline > li:before {
             flex-direction: row;
     position: absolute;
     bottom: 0px;
-    left: 21%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    left: 0px;
+    right: 0px;
+    margin-left: auto !important;
+    margin-right: auto !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(167, 29, 49, 0.8);
-    width: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 88%;
   }
   .samoDesktop .itemDesktop {
     display: -webkit-box;
@@ -1248,7 +1469,7 @@ ul.timeline > li:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border-right: 1px solid white;
+    border-right: 1px solid rgba(167, 29, 49, 0.8);
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
@@ -1257,10 +1478,17 @@ ul.timeline > li:before {
             align-items: center;
     padding: 30px;
     text-align: center !important;
-    width: auto;
+    width: 33.3%;
+    color: rgba(167, 29, 49, 0.8);
+    height: 120px;
   }
   .samoDesktop .itemDesktop .fas {
     font-size: 50px;
+    opacity: 0.8;
+    color: rgba(167, 29, 49, 0.8);
+  }
+  .samoDesktop .itemDesktop .ss {
+    opacity: 0.8;
   }
   .navbar {
     padding: 10px !important;
@@ -1269,7 +1497,7 @@ ul.timeline > li:before {
   .contactUS {
     padding: 0rem;
     padding-bottom: 1rem !important;
-    padding-top: 11rem !important;
+    padding-top: 11   rem !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1316,24 +1544,6 @@ ul.timeline > li:before {
     padding: 6rem;
     padding-top: 0 !important;
   }
-
-  .articlesCon {
-      flex-direction:row;
-      padding:6rem;
-      margin:10px;
-        width:100%;
-        justify-content: flex-start;
-        padding-top:0 !important;
-        margin-top:0 !important;
-        
-  
-  }
-
-  .arItem {
-      width:300px !important;
-      height:auto;
-      margin:10px;
-  }
 }
 
 .samoDesktop {
@@ -1344,5 +1554,56 @@ ul.timeline > li:before {
   background-color: white;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
+}
+
+.change {
+  background-color: #0F4C5C;
+}
+
+.cDesktop {
+  display: none;
+}
+
+.cD1 {
+  display: none;
+}
+
+.iCHD {
+  display: none;
+}
+
+#top {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10px;
+  /* Place the button at the bottom of the page */
+  right: 10px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgba(167, 29, 49, 0.8);
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */
